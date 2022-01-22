@@ -252,7 +252,6 @@ body.no-scroll {
 .intro {
   padding: 5.3125rem 0 0;
   margin: 0 0 1.875rem;
-  background: #000 center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -545,7 +544,7 @@ body.no-scroll {
     width: 100%;
     max-width: none;
     min-height: auto;
-    column-gap: 0.6666666667em;
+    column-gap: 1.3333333333em;
     row-gap: 2em;
   }
 }
@@ -553,6 +552,11 @@ body.no-scroll {
 @media (max-width: 992px) {
   .clients__link {
     width: 30%;
+  }
+}
+@media (max-width: 575px) {
+  .clients__link {
+    width: 45%;
   }
 }
 
@@ -628,7 +632,6 @@ body.no-scroll {
 
 .reviews__header {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 1.3333333333em;
   margin: 0 0 2em 0;
 }
@@ -721,6 +724,7 @@ body.no-scroll {
 
 .reviews__content p {
   margin-bottom: 0.6666666667em;
+  text-align: justify;
   line-height: 1.8;
 }
 .reviews__content p:last-child {
@@ -743,7 +747,7 @@ body.no-scroll {
   padding: 0.8333333333em 0;
   margin: 0 0 0 2.2222222222em;
   vertical-align: middle;
-  background: url("../../../img/icons/heart.svg") no-repeat left 20px center;
+  background: url("../img/icons/heart.svg") no-repeat left 20px center;
   font-size: 1.125rem;
 }
 @media (max-width: 767px) {
@@ -1019,6 +1023,7 @@ body.no-scroll {
 }
 .news {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2em;
   margin: 0 0 3.3333333333em 0;
@@ -1037,6 +1042,11 @@ body.no-scroll {
 @media (max-width: 767px) {
   .news__item {
     max-width: none;
+  }
+}
+@media (max-width: 575px) {
+  .news__item {
+    flex: 1 1 100%;
   }
 }
 
@@ -1058,6 +1068,7 @@ body.no-scroll {
 
 .news__content {
   margin: 0 0 1em 0;
+  text-align: justify;
   line-height: 1.4;
 }
 
