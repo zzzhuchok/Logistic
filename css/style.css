@@ -266,7 +266,7 @@ body.no-scroll {
 .intro--blog {
   min-height: 21.875rem;
   margin: 0;
-  background-image: url("/img/intro--news.jpg");
+  background-image: url("../img/intro--news.jpg");
 }
 @media (max-width: 767px) {
   .intro--blog {
