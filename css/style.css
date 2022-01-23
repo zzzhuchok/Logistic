@@ -252,7 +252,6 @@ body.no-scroll {
 .intro {
   padding: 5.3125rem 0 0;
   margin: 0 0 1.875rem;
-  background-size: cover;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -264,7 +263,8 @@ body.no-scroll {
 .intro--blog {
   min-height: 21.875rem;
   margin: 0;
-  background-image: url("../img/intro--news.jpg");
+  background: #314d58 url("../img/intro--news.jpg") no-repeat center;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .intro--blog {
@@ -274,7 +274,8 @@ body.no-scroll {
 .intro--privacy {
   min-height: 21.875rem;
   margin: 0;
-  background-image: url("../img/intro--privacy.jpg");
+  background: #5d8197 url("../img/intro--privacy.jpg") no-repeat center;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .intro--privacy {
@@ -286,14 +287,15 @@ body.no-scroll {
 .intro__slickSlider {
   width: 100%;
   height: 100%;
+  background: #092a31 url("../img/slider/slide-1.webp") no-repeat center;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.intro__slickSlider .slick-initialized {
-  background: #000;
+.intro__slickSlider.slick-initialized {
+  background: #092a31;
 }
 
 .intro__slickSlider .slick-list {
@@ -1078,12 +1080,6 @@ body.no-scroll {
   color: #6e6e6e;
 }
 
-@media (max-width: 767px) {
-  .news__btn {
-    text-align: center;
-  }
-}
-
 .footer {
   padding: 2.6666666667em 0;
   margin-top: auto;
@@ -1331,6 +1327,59 @@ body.no-scroll {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inner__img {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .inner__img {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.inner__text {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .inner__text {
+    width: 100%;
+  }
+}
+
+.inner__text-title {
+  margin: 0 0 20px 0;
+  font-family: "Lato", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inner__text-p {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.inner__text-link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #004AF2;
+  font-weight: 700;
+}
+@media (min-width: 993px) {
+  .inner__text-link:hover {
+    text-decoration: underline;
+  }
+}
+
 /* GENERAL */
 .container {
   max-width: 1230px;
@@ -1393,12 +1442,6 @@ body.no-scroll {
 @media (max-width: 575px) {
   .main__text {
     margin: 0 0 2.2222222222em 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .main__btn {
-    text-align: center;
   }
 }
 
